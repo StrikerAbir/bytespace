@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         {/* bottom part */}
-        <div className="flex justify-between border-t border-neutral-200 pt-6">
+        <div className="flex justify-between border-t border-neutral-200 pt-6 pb-10">
           <p className="text-center text-[14px]">
             &copy; {new Date().getFullYear()} ByteSpace. All rights reserved.
           </p>

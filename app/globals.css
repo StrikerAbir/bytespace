@@ -97,3 +97,10 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+
+.grid-background {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 100px 100px;
+}

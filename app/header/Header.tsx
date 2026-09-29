@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,10 +11,31 @@ const navigationLinks = [
 ];
 
 const Header = () => {
-  return (
-    <header className="w-full h-30 top-0 fixed z-50 bg-primary-800">
-      <nav className="h-full flex items-center justify-between max-w-360 mx-auto px-30 text-neutral-50">
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
 
+  useEffect(() => {
+    const hero = document.querySelector("#hero");
+    if (!hero) {
+      setIsHeroVisible(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsHeroVisible(entry.isIntersecting),
+    );
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <header
+      className={`w-full top-0 fixed z-50 transition-all duration-300 ${
+        isHeroVisible ? "h-30" : "h-20"
+      } ${
+        isHeroVisible ? "bg-transparent" : "bg-blue-800"
+      }`}
+    >
+      <nav className="h-full flex items-center justify-between max-w-360 mx-auto px-30 text-neutral-50">
         {/* logo */}
         <Link href="#" className="">
           {" "}

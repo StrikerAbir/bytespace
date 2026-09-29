@@ -19,7 +19,7 @@ const PageMaker: React.FC<PageMakerProps> = ({
 
       <div className={`w-full ${containerClass}`}>
         <Header />
-        <section className={`w-full pt-30  ${className}`}>
+        <section className={`w-full  ${className}`}>
           {children}
         </section>
         <Footer />
