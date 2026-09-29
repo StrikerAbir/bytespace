@@ -9,7 +9,7 @@ export const Explore = () => {
   ];
 
   return (
-    <section id="explore" className="mt-20 max-w-300 mx-auto">
+    <section id="explore" className="my-20 max-w-300 mx-auto">
       <div className="max-w-229.25 text-center mx-auto">
         <h1 className="font-semibold text-4xl">
           Explore Diverse Learning Paths at Bytespace
