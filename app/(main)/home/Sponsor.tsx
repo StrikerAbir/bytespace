@@ -17,6 +17,7 @@ export const Sponsor = () => {
     <div
       aria-hidden={ariaHidden}
       className="flex shrink-0 items-center justify-center space-x-8 md:space-x-16 py-15 animate-loop-scroll pr-16"
+      id="sponsor"
     >
       {sponsors.map((sponsor, index) => (
         <div key={index} className="flex shrink-0 items-center justify-center">
