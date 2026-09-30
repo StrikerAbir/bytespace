@@ -1,5 +1,7 @@
 import React from 'react'
 import Featured from './Featured';
+import Cards from './Cards';
+
 
 const Discover = () => {
   return (
@@ -16,6 +18,8 @@ const Discover = () => {
       </div>
 
       <Featured />
+
+      <Cards/>
     </section>
   );
 }
