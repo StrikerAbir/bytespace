@@ -59,12 +59,12 @@ const Header = () => {
         {/* User Actions */}
         <ul className="flex items-center gap-5">
           <li>
-            <Link href="#" className="hover:text-neutral-200 ">
+            <Link href="/login" className="hover:text-neutral-200 ">
               Sign In
             </Link>
           </li>
           <li>
-            <Link href="#" className=" hover:text-neutral-200">
+            <Link href="/register" className=" hover:text-neutral-200">
               Join Us
             </Link>
           </li>
