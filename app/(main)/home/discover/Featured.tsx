@@ -1,28 +1,9 @@
 "use client";
 import Link from "next/link";
 import Button from "@/libs/ui-components/Button";
+import { featuredOptions } from "./constants";
 
-const featuredOptions = [
-  "Featured",
-  "Music",
-  "Drawing & Painting",
-  "Marketing",
-  "Animation",
-  "Social Media",
-  "UI/UX Design",
-  "Creative Marketing",
-  "Digital Illustration",
-  "Film & Video",
-  "Crafts",
-  "Freelance & Entrepreneurship",
-  "Graphic Design",
-  "Photography",
-  "Productivity",
-  "Web Development",
-  "Data Science",
-  "Cooking",
-  "+ More",
-];
+
 
 const Featured = () => {
   return (

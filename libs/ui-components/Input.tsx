@@ -99,7 +99,7 @@ const TextInput = ({
             {isPasswordVisible ? (
               <span role="img" aria-label="Hide password">
                 <Image
-                  src="/icons/home/header/eye-close.svg"
+                  src="/icons/eye-close.svg"
                   alt="Hide password"
                   width={14}
                   height={14}
@@ -108,7 +108,7 @@ const TextInput = ({
             ) : (
               <span role="img" aria-label="Show password">
                 <Image
-                  src="/icons/home/header/eye.svg"
+                  src="/icons/eye.svg"
                   alt="Show password"
                   width={14}
                   height={14}

@@ -25,7 +25,7 @@ const Button = ({
   type = "button",
 }: ButtonProps) => {
   const baseStyles =
-    "whitespace-nowrap rounded-3xl text-[18px] font-medium disabled:cursor-not-allowed flex items-center gap-2 flex justify-center items-center";
+    "whitespace-nowrap rounded-3xl text-[18px] font-medium cursor-pointer disabled:cursor-not-allowed flex items-center gap-2 flex justify-center items-center";
 
   const variantStyles = {
     primary: "bg-primary-500 text-neutral-900",

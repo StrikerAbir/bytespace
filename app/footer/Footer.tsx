@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="max-w-300 pt-17.75 px-5 space-y-37.5 mx-auto">
+    <footer className="max-w-300 pt-17.75 px-5 space-y-37.5 mx-auto border-t border-neutral-200">
       <div className="w-full grid grid-cols-2 gap-10">
         {/* logo part */}
         <div className="flex-1 space-y-11.25">
@@ -39,7 +39,7 @@ const Footer = () => {
               {" "}
               <div className="flex items-center gap-2">
                 <Image
-                  src="/icons/home/header/logo.svg"
+                  src="/icons/logo.svg"
                   alt="ByteSpace Logo"
                   width={28}
                   height={30}
