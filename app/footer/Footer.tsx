@@ -30,10 +30,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="mx-auto max-w-300 space-y-20 px-5 pt-12 sm:space-y-28 sm:pt-17.75 lg:space-y-37.5">
-      <div className="grid w-full grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
+    <footer className="max-w-300 pt-17.75 px-5 space-y-37.5 mx-auto">
+      <div className="w-full grid grid-cols-2 gap-10">
         {/* logo part */}
-        <div className="flex-1 space-y-8 sm:space-y-11.25">
+        <div className="flex-1 space-y-11.25">
           <div className="">
             <Link href="#">
               {" "}
@@ -56,15 +56,15 @@ const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:gap-6">
+            <div className="flex items-center  gap-6">
               {" "}
               <TextInput
                 placeholder="Enter your email"
-                inputClass="!h-[52px] !w-full !max-w-none !rounded-[100px] sm:!max-w-[337px]"
+                inputClass="!max-w-[337px] !h-[52px] !rounded-[100px] "
               />
               <Button
                 onClick={() => console.log("Clicked!")}
-                otherClass="h-[46px] w-full sm:w-auto"
+                otherClass=" h-[46px]"
               >
                 Subscribe
               </Button>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         {/* list part */}
-        <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3">
+        <div className="flex-1 grid grid-cols-3 gap-6">
           {footerLinks.map((column, columnIndex) => (
             <ul key={columnIndex}>
               {column.map((link) => (
@@ -92,12 +92,12 @@ const Footer = () => {
       </div>
 
       {/* bottom part */}
-      <div className="flex flex-col gap-4 border-t border-neutral-200 pb-10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-center text-[14px] sm:text-left">
+      <div className="flex justify-between border-t border-neutral-200 pt-6 pb-10">
+        <p className="text-center text-[14px]">
           &copy; {new Date().getFullYear()} ByteSpace. All rights reserved.
         </p>
         <div>
-          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[14px] sm:justify-end">
+          <ul className="flex gap-6 text-[14px]">
             <li>
               <Link href="/privacy-policy">Privacy Policy</Link>
             </li>
