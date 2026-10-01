@@ -31,12 +31,10 @@ export const Register = () => {
           </div>
         </div>
 
-       
-
         <div className="text-neutral-500 text-center">
-          <span>New user? </span>
-          <Link href="/register" className="text-primary-600">
-            Create an account
+          <span>Already have an account? </span>
+          <Link href="/login" className="text-primary-600">
+            Login
           </Link>
         </div>
       </div>
