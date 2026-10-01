@@ -17,7 +17,9 @@ export default function Home() {
         <Path />
       </div>
       <Unlock />
-      <Community />
+      <div className="overflow-hidden max-w-360 mx-auto">
+        <Community />
+      </div>
     </section>
   );
 }
