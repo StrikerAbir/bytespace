@@ -37,7 +37,7 @@ const Cards = () => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <Button variant="neutral" otherClass="h-8 !text-[12px]">
+              <Button variant="neutral" otherClass="!py-[9px] !px-3 !text-[12px]">
                 <Image
                   src="/icons/signal_cellular.svg"
                   alt="signal"

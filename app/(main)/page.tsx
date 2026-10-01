@@ -6,8 +6,6 @@ import { Path } from "./home/path/Path";
 import { Sponsor } from "./home/Sponsor";
 import { Unlock } from "./home/unlock/Unlock";
 
-
-
 export default function Home() {
   return (
     <section>
@@ -15,7 +13,9 @@ export default function Home() {
       <Sponsor />
       <Discover />
       <Explore />
-      <Path />
+      <div className="overflow-hidden max-w-360 mx-auto">
+        <Path />
+      </div>
       <Unlock />
       <Community />
     </section>
