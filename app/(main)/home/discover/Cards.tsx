@@ -4,7 +4,7 @@ import Button from "@/libs/ui-components/Button";
 
 const Cards = () => {
   return (
-    <div className="w-full max-w-300 mx-auto px-4 sm:px-6 lg:px-0">
+    <div className="w-full max-w-300 mx-auto px-2">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full">
         {course_data.map((card) => (
           <div
@@ -18,8 +18,10 @@ const Cards = () => {
             />
             <div className="flex justify-between gap-5">
               {" "}
-              <div>
-                <h2 className="font-semibold text-xl">{card.title}</h2>
+              <div className="flex-1">
+                <h2 className="font-semibold text-xl line-clamp-1">
+                  {card.title}
+                </h2>
                 <p>
                   by{" "}
                   <span className="text-primary-500">
@@ -27,7 +29,7 @@ const Cards = () => {
                   </span>
                 </p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className=" flex justify-center items-center gap-2">
                 <p>{card.rating}</p>
                 <img
                   src="./icons/star.svg"
