@@ -47,11 +47,11 @@ export const Path = () => {
           />
         ))}
       </div>
-      <div className="relative z-10 max-w-300 mx-auto pt-30">
+      <div className="relative z-10 mx-auto max-w-300 px-6 pt-16 md:px-10 md:pt-24 lg:px-12 lg:pt-30 xl:px-0">
         {/* part 1 */}
-        <div className="flex justify-between gap-15.75">
-          <div className="flex-1 flex flex-col justify-center gap-8">
-            <h1 className="text-[44px] font-semibold leading-10">
+        <div className="flex flex-col-reverse justify-between gap-10 lg:flex-row lg:gap-12 xl:gap-15.75">
+          <div className="flex flex-1 flex-col justify-center gap-6 lg:gap-8">
+            <h1 className="text-3xl font-semibold leading-tight md:text-4xl lg:text-[44px] lg:leading-10">
               Your Path to Professional Growth Starts Here!
             </h1>
             <p>
@@ -73,26 +73,26 @@ export const Path = () => {
               ))}
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex flex-1 justify-center">
             <img
               src="./icons/home/path/Frame 11.png"
               alt="path"
-              className="w-full h-auto object-contain"
+              className="h-auto w-full max-w-150 object-contain"
             />
           </div>
         </div>
 
         {/* part 2 */}
-        <div className="flex justify-between gap-15.75">
-          <div className="flex-1">
+        <div className="flex flex-col justify-between gap-10 lg:flex-row lg:gap-12 xl:gap-15.75">
+          <div className="flex flex-1 justify-center">
             <img
               src="./icons/home/path/Frame 12.png"
               alt="path"
-              className="w-full h-auto object-contain"
+              className="h-auto w-full max-w-150 object-contain"
             />
           </div>
-          <div className="flex-1 flex flex-col justify-center gap-8">
-            <h1 className="text-[44px] font-semibold leading-10">
+          <div className="flex flex-1 flex-col justify-center gap-6 lg:gap-8">
+            <h1 className="text-3xl font-semibold leading-tight md:text-4xl lg:text-[44px] lg:leading-10">
               Create & Manage Courses Easily.
             </h1>
             <p>

@@ -4,8 +4,8 @@ import Button from "@/libs/ui-components/Button";
 
 const Cards = () => {
   return (
-    <div className="max-w-300 mx-auto">
-      <div className="grid grid-cols-3 gap-10 w-full">
+    <div className="w-full max-w-300 mx-auto px-4 sm:px-6 lg:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full">
         {course_data.map((card) => (
           <div
             key={card.id}
@@ -37,7 +37,10 @@ const Cards = () => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <Button variant="neutral" otherClass="!py-[9px] !px-3 !text-[12px]">
+              <Button
+                variant="neutral"
+                otherClass="!py-[9px] !px-3 !text-[12px]"
+              >
                 <Image
                   src="/icons/signal_cellular.svg"
                   alt="signal"
