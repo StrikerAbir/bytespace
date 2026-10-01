@@ -14,17 +14,10 @@ const Header = () => {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
 
   useEffect(() => {
-    const hero = document.querySelector("#hero");
-    if (!hero) {
-      setIsHeroVisible(false);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsHeroVisible(entry.isIntersecting),
-    );
-    observer.observe(hero);
-    return () => observer.disconnect();
+    const updateHeader = () => setIsHeroVisible(window.scrollY === 0);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    return () => window.removeEventListener("scroll", updateHeader);
   }, []);
 
   return (

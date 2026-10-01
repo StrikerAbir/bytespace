@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="max-w-300 pt-17.75 space-y-37.5 mx-auto">
+    <footer className="max-w-300 pt-17.75 px-5 space-y-37.5 mx-auto">
       <div className="w-full grid grid-cols-2 gap-10">
         {/* logo part */}
         <div className="flex-1 space-y-11.25">
@@ -60,7 +60,7 @@ const Footer = () => {
               {" "}
               <TextInput
                 placeholder="Enter your email"
-                inputClass="!w-[337px] !h-[52px] !rounded-[100px] "
+                inputClass="!max-w-[337px] !h-[52px] !rounded-[100px] "
               />
               <Button
                 onClick={() => console.log("Clicked!")}
