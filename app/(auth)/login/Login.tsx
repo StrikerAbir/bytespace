@@ -17,10 +17,10 @@ export const Login = () => {
         </div>
 
         <div className="space-y-5 xl:space-y-6">
-          <TextInput label="Email" placeholder="Enter your email" />
+          <TextInput label="Email" placeholder="abc@example.com" />
           <TextInput
             label="Password"
-            placeholder="Enter your password"
+            placeholder="***********"
             type="password"
           />
           <div className="flex justify-end">

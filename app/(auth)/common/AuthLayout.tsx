@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const AuthLayout = ({
   title,
@@ -12,9 +13,11 @@ export const AuthLayout = ({
   return (
     <section className="min-h-screen bg-primary-800 grid-background">
       <div className="mx-auto max-w-360 px-6 lg:px-30.5">
-        <div className="flex h-20 w-full items-center">
-          <Image src="/icons/logo.svg" alt="Logo" width={30} height={30} />
-        </div>
+        <Link href="/" className="">
+          <div className="flex h-20 w-full items-center">
+            <Image src="/icons/logo.svg" alt="Logo" width={30} height={30} />
+          </div>
+        </Link>
 
         <div className="mt-5 flex items-center justify-between gap-15 xl:gap-25">
           {/* left side */}
