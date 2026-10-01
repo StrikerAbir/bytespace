@@ -16,7 +16,6 @@ const PageMaker: React.FC<PageMakerProps> = ({
 }) => {
   return (
     <React.Fragment>
-
       <div className={`w-full ${containerClass}`}>
         <Header />
         <section className={`w-full  ${className}`}>
